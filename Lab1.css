@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family:'Dancing Script', cursive;
+  }
+
+  
+body {
+    display:flex ;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #main{
+      display: flex;
+      flex: 1;
+  }
+
+  #main:after {
+    content: "";
+    clear: both;
+  }
+
+
+  #main>article{
+      flex: 1;
+  }
+
+  #main>.left-side,
+  #main>.right-side{
+    flex: 1 1 20vw;
+    background-color: #ddd;
+  }
+
+  #main>.left-side{
+      order: -1;
+  }
+  
+  /* Style the header */
+header,footer{
+    background-color: grey;
+    text-align: center;
+  }
+
+  header{
+    height: 20vh;
+  }
+
+  footer{
+    height: 10vh;
+  }
+
+  header, 
+  footer,
+  article,
+  aside{
+      padding: 1em;
+  }
+
+  
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  video{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* for mobile */
+/* 
+  @media screen and (max-width: 576px) {
+      #main{
+          flex-wrap: wrap;
+      }
+}  */
+
+ /* @media screen and (max-width: 576px) {
+
+    .right-side{
+        display: none;
+    }
+    .left-side{
+        display: none;
+    }
+}   */
+
+/* for tablets */
+
+ /* @media screen and (max-width: 768px) {
+    .right-side{
+        display: none;
+    }
+    article{
+        width: 100%;
+    }
+}   */
+
+@media screen and (max-width: 450px){
+    .topnav{
+        display: none;
+    }
+}
+
+
+
